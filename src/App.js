@@ -1,106 +1,160 @@
-import { useState } from "react";
+import React from "react";
 
-export default function App() {
-  const [query, setQuery] = useState("");
-
+function App() {
   const scrollTo = (id) => {
-    document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
+    const section = document.getElementById(id);
+    if (section) section.scrollIntoView({ behavior: "smooth" });
   };
 
   return (
-    <div style={{ fontFamily: "sans-serif", lineHeight: 1.6 }}>
-      {/* HEADER */}
+    <div style={{ fontFamily: "Arial, sans-serif" }}>
+      {/* Header */}
       <header
         style={{
+          width: "100%",
+          padding: "30px 0",
+          background: "linear-gradient(90deg, #6a11cb 0%, #2575fc 100%)",
+          display: "flex",
+          justifyContent: "center",
           position: "fixed",
           top: 0,
-          width: "100%",
-          backgroundColor: "#fff",
-          borderBottom: "1px solid #ddd",
           zIndex: 1000,
-          display: "flex",
-          justifyContent: "space-between",
-          padding: "20px 40px",
+          boxShadow: "0 4px 12px rgba(0,0,0,0.1)",
         }}
       >
-        <h2 style={{ margin: 0 }}>TravelMVP</h2>
-        <nav style={{ display: "flex", gap: "24px" }}>
-          <button onClick={() => scrollTo("home")} style={navBtnStyle}>Home</button>
-          <button onClick={() => scrollTo("come-funziona")} style={navBtnStyle}>Come funziona</button>
+        <nav style={{ display: "flex", gap: "48px", alignItems: "center" }}>
+          <button onClick={() => scrollTo("home")} style={menuBtnStyle}>
+            Home
+          </button>
+          <button onClick={() => scrollTo("come-funziona")} style={menuBtnStyle}>
+            Come funziona
+          </button>
+          <button onClick={() => alert("Contattaci via email!")} style={menuBtnStyle}>
+            Contatti
+          </button>
         </nav>
       </header>
 
-      {/* HERO - SEZIONE RICERCA */}
-      <section id="home" style={{ paddingTop: 100, maxWidth: 800, margin: "80px auto", textAlign: "center" }}>
-        <h1 style={{ fontSize: "2.4rem", marginBottom: 16 }}>
-          Scopri il tuo prossimo viaggio in pochi secondi
+      {/* Hero */}
+      <section
+        id="home"
+        style={{
+          minHeight: "100vh",
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center",
+          justifyContent: "center",
+          paddingTop: "100px",
+          background: "#f4f7fa",
+          textAlign: "center",
+        }}
+      >
+        <h1 style={{ fontSize: "40px", marginBottom: "10px", color: "#333" }}>
+          Trova il viaggio perfetto per te
         </h1>
-        <p style={{ fontSize: "1.2rem", color: "#555", marginBottom: 40 }}>
-          Scrivi dove vuoi andare, o il tipo di esperienza che sogni: penseremo noi al resto!
+        <p style={{ fontSize: "20px", marginBottom: "40px", color: "#666" }}>
+          Scrivi la tua idea di viaggio, noi ti proponiamo gli itinerari ideali.
         </p>
         <textarea
-          value={query}
-          onChange={(e) => setQuery(e.target.value)}
-          rows={4}
-          placeholder="Es. Viaggio in Giappone, weekend avventura, città romantiche..."
+          placeholder="Es: Voglio vedere l'aurora boreale a gennaio"
           style={{
-            width: "100%",
+            width: "80%",
+            maxWidth: "600px",
+            height: "100px",
             padding: "16px",
-            fontSize: "16px",
-            borderRadius: 8,
+            borderRadius: "12px",
             border: "1px solid #ccc",
-            resize: "none",
-            marginBottom: 24,
+            fontSize: "16px",
           }}
-        ></textarea>
+        />
         <button
-          onClick={() => alert(`Hai cercato: ${query}`)}
-          style={primaryBtnStyle}
+          onClick={() => scrollTo("come-funziona")}
+          style={{
+            marginTop: "30px",
+            backgroundColor: "#2575fc",
+            color: "#fff",
+            padding: "14px 30px",
+            fontSize: "16px",
+            border: "none",
+            borderRadius: "10px",
+            cursor: "pointer",
+            boxShadow: "0 4px 8px rgba(0,0,0,0.1)",
+          }}
         >
-          Trova il mio itinerario
+          Inizia la ricerca
         </button>
       </section>
 
-      {/* COME FUNZIONA */}
-      <section id="come-funziona" style={{ backgroundColor: "#f9f9f9", padding: "80px 20px" }}>
-        <h2 style={{ textAlign: "center", fontSize: "2rem", marginBottom: 48 }}>Come funziona</h2>
-        <div style={{ maxWidth: 1000, margin: "0 auto", display: "grid", gridTemplateColumns: "1fr 1fr", gap: 40 }}>
-          <div style={stepStyle}><strong>1. Scrivi cosa cerchi</strong><p>Descrivi un'idea, una destinazione, o una sensazione.</p></div>
-          <div style={stepStyle}><strong>2. Ti proponiamo 3 itinerari</strong><p>Sono dinamici, creati apposta in base alla tua richiesta.</p></div>
-          <div style={stepStyle}><strong>3. Personalizzali</strong><p>Scegli uno e modifica attività, date, durata, stile.</p></div>
-          <div style={stepStyle}><strong>4. Prenota</strong><p>Con link diretti, consigli locali, e supporto dedicato.</p></div>
+      {/* Come funziona */}
+      <section
+        id="come-funziona"
+        style={{
+          background: "#fff",
+          padding: "80px 20px",
+          textAlign: "center",
+        }}
+      >
+        <h2 style={{ fontSize: "36px", marginBottom: "40px", color: "#333" }}>Come funziona</h2>
+        <div
+          style={{
+            display: "grid",
+            gridTemplateColumns: "repeat(auto-fit, minmax(250px, 1fr))",
+            gap: "30px",
+            maxWidth: "1000px",
+            margin: "0 auto",
+          }}
+        >
+          {[
+            "Scrivi la tua idea di viaggio o lasciati ispirare",
+            "Ricevi 3 proposte automatiche",
+            "Personalizza il tuo itinerario",
+            "Salva o prenota il tuo viaggio",
+          ].map((step, i) => (
+            <div
+              key={i}
+              style={{
+                background: "#f4f7fa",
+                borderRadius: "12px",
+                padding: "30px",
+                boxShadow: "0 4px 8px rgba(0,0,0,0.05)",
+              }}
+            >
+              <h3 style={{ fontSize: "20px", color: "#2575fc" }}>Passo {i + 1}</h3>
+              <p style={{ marginTop: "10px", fontSize: "16px", color: "#444" }}>{step}</p>
+            </div>
+          ))}
         </div>
-        <div style={{ textAlign: "center", marginTop: 64 }}>
-          <button onClick={() => scrollTo("home")} style={primaryBtnStyle}>
-            Portami al mio viaggio
-          </button>
-        </div>
+        <button
+          onClick={() => scrollTo("home")}
+          style={{
+            marginTop: "50px",
+            backgroundColor: "#6a11cb",
+            color: "#fff",
+            padding: "16px 32px",
+            fontSize: "18px",
+            border: "none",
+            borderRadius: "12px",
+            cursor: "pointer",
+            boxShadow: "0 4px 10px rgba(0,0,0,0.1)",
+          }}
+        >
+          Portami al mio viaggio
+        </button>
       </section>
     </div>
   );
 }
 
-const navBtnStyle = {
-  background: "none",
-  border: "none",
-  color: "#333",
-  fontSize: "16px",
-  cursor: "pointer",
-};
-
-const primaryBtnStyle = {
-  backgroundColor: "#0070f3",
+// Stili per i pulsanti del menu
+const menuBtnStyle = {
+  background: "transparent",
   color: "#fff",
+  fontSize: "18px",
   border: "none",
-  padding: "12px 24px",
-  borderRadius: 6,
-  fontSize: "16px",
   cursor: "pointer",
+  padding: "10px 20px",
+  borderRadius: "8px",
+  transition: "background 0.3s ease",
 };
 
-const stepStyle = {
-  background: "#fff",
-  padding: "20px",
-  borderRadius: "10px",
-  boxShadow: "0 0 10px rgba(0,0,0,0.1)",
-};
+export default App;
