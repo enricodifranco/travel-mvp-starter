@@ -5,7 +5,7 @@ import './Navbar.css'; // (opzionale, se vuoi aggiungere stile CSS separato)
 const Navbar = () => {
   return (
     <nav className="navbar">
-      <li><Link to="/homepage"><div className="logo">TravelMate</div></Link></li>
+      <li><Link to="#"><div className="logo">TravelMate</div></Link></li>
       <ul className="nav-links">
         <li><a href="#come-funziona">Come funziona</a></li>
         <li><Link to="/contatti">Contatti</Link></li>
