@@ -1,4 +1,5 @@
 import React from 'react';
+import './Navbar.css'; // (opzionale, se vuoi aggiungere stile CSS separato)
 import { useNavigate, useLocation } from 'react-router-dom';
 
 const Navbar = () => {
@@ -25,7 +26,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-white shadow-md py-4 px-8 flex justify-between items-center sticky top-0 z-50">
+    <nav className="navbar">
       <div onClick={goToHome} className="text-2xl font-bold text-blue-600 cursor-pointer">
         TravelMVP
       </div>
