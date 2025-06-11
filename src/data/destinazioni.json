@@ -1,58 +1,142 @@
 [
   {
     "nome": "Roma",
-    "descrizione": "La Città Eterna con monumenti storici, musei e cucina tradizionale.",
+    "descrizione": "La Città Eterna con monumenti iconici come il Colosseo e la Fontana di Trevi.",
     "stagioni": ["primavera", "autunno"],
-    "esperienze": ["città d'arte", "enogastronomia"],
-    "budget": "medio"
-  },
-  {
-    "nome": "Firenze",
-    "descrizione": "Culla del Rinascimento, perfetta per gli amanti dell’arte e della storia.",
-    "stagioni": ["primavera", "estate", "autunno"],
-    "esperienze": ["città d'arte", "enogastronomia"],
+    "esperienze": ["cultura", "storia", "gastronomia"],
     "budget": "medio"
   },
   {
     "nome": "Venezia",
-    "descrizione": "Una città unica costruita sull'acqua, ideale per romantici e fotografi.",
-    "stagioni": ["primavera", "autunno"],
-    "esperienze": ["città d'arte", "relax"],
+    "descrizione": "Una romantica città sull'acqua, perfetta per giri in gondola e arte.",
+    "stagioni": ["primavera", "estate"],
+    "esperienze": ["romantico", "cultura", "arte"],
     "budget": "alto"
+  },
+  {
+    "nome": "Firenze",
+    "descrizione": "Culla del Rinascimento, ideale per gli amanti di arte e architettura.",
+    "stagioni": ["primavera", "autunno"],
+    "esperienze": ["arte", "cultura", "storia"],
+    "budget": "medio"
   },
   {
     "nome": "Napoli",
-    "descrizione": "Vibrante e autentica, con vista sul Vesuvio e la migliore pizza del mondo.",
-    "stagioni": ["primavera", "autunno"],
-    "esperienze": ["città d'arte", "enogastronomia"],
+    "descrizione": "Vita autentica, pizza e vicinanza alla Costiera Amalfitana e Pompei.",
+    "stagioni": ["primavera", "estate", "autunno"],
+    "esperienze": ["gastronomia", "mare", "storia"],
     "budget": "basso"
   },
   {
-    "nome": "Cinque Terre",
-    "descrizione": "Colorati borghi a picco sul mare ideali per trekking e relax.",
-    "stagioni": ["primavera", "estate"],
-    "esperienze": ["mare", "natura"],
-    "budget": "medio"
-  },
-  {
-    "nome": "Dolomiti",
-    "descrizione": "Le montagne più spettacolari d’Italia, perfette per escursioni e sport invernali.",
-    "stagioni": ["estate", "inverno"],
-    "esperienze": ["montagna", "avventura", "natura"],
-    "budget": "medio"
-  },
-  {
-    "nome": "Amalfi",
-    "descrizione": "Una delle perle della Costiera Amalfitana, ideale per vacanze romantiche.",
-    "stagioni": ["primavera", "estate"],
-    "esperienze": ["mare", "relax"],
+    "nome": "Milano",
+    "descrizione": "Capitale della moda e del design, con un'intensa vita urbana.",
+    "stagioni": ["primavera", "autunno", "inverno"],
+    "esperienze": ["moda", "cultura", "business"],
     "budget": "alto"
   },
   {
-    "nome": "Matera",
-    "descrizione": "Famosa per i Sassi, offre un’esperienza autentica e fuori dal tempo.",
-    "stagioni": ["primavera", "autunno"],
-    "esperienze": ["città d'arte", "natura"],
+    "nome": "Torino",
+    "descrizione": "Elegante città piemontese tra arte barocca e cioccolato.",
+    "stagioni": ["inverno", "autunno"],
+    "esperienze": ["cultura", "cibo", "montagna"],
+    "budget": "medio"
+  },
+  {
+    "nome": "Palermo",
+    "descrizione": "Città storica con mercati, cultura araba e splendide spiagge vicine.",
+    "stagioni": ["estate", "primavera"],
+    "esperienze": ["cultura", "mare", "gastronomia"],
     "budget": "basso"
+  },
+  {
+    "nome": "Bologna",
+    "descrizione": "La dotta, la rossa, la grassa: università, portici e cibo.",
+    "stagioni": ["primavera", "autunno"],
+    "esperienze": ["cultura", "gastronomia", "studenti"],
+    "budget": "medio"
+  },
+  {
+    "nome": "Verona",
+    "descrizione": "Città di Romeo e Giulietta, perfetta per un weekend romantico.",
+    "stagioni": ["primavera", "estate"],
+    "esperienze": ["romantico", "arte", "cultura"],
+    "budget": "medio"
+  },
+  {
+    "nome": "Cinque Terre",
+    "descrizione": "Colorati villaggi sul mare tra sentieri e panorami mozzafiato.",
+    "stagioni": ["primavera", "estate"],
+    "esperienze": ["mare", "natura", "romantico"],
+    "budget": "medio"
+  },
+  {
+    "nome": "Lecce",
+    "descrizione": "Barocco, sole e gastronomia nel cuore del Salento.",
+    "stagioni": ["estate", "primavera"],
+    "esperienze": ["mare", "cultura", "gastronomia"],
+    "budget": "basso"
+  },
+  {
+    "nome": "Matera",
+    "descrizione": "I famosi Sassi per un viaggio nel tempo unico.",
+    "stagioni": ["primavera", "autunno"],
+    "esperienze": ["storia", "paesaggi", "esperienziale"],
+    "budget": "basso"
+  },
+  {
+    "nome": "Alberobello",
+    "descrizione": "Trulli iconici e atmosfera da fiaba nella Valle d'Itria.",
+    "stagioni": ["primavera", "estate"],
+    "esperienze": ["romantico", "fotografia", "cultura"],
+    "budget": "basso"
+  },
+  {
+    "nome": "Aosta",
+    "descrizione": "Montagne, castelli e sport invernali nelle Alpi.",
+    "stagioni": ["inverno", "estate"],
+    "esperienze": ["montagna", "sport", "natura"],
+    "budget": "medio"
+  },
+  {
+    "nome": "Catania",
+    "descrizione": "Tra l'Etna e il mare, città vivace e ricca di contrasti.",
+    "stagioni": ["estate", "primavera"],
+    "esperienze": ["avventura", "cultura", "mare"],
+    "budget": "basso"
+  },
+  {
+    "nome": "Rimini",
+    "descrizione": "Divertimento, spiagge e movida sulla riviera romagnola.",
+    "stagioni": ["estate"],
+    "esperienze": ["mare", "divertimento", "famiglia"],
+    "budget": "basso"
+  },
+  {
+    "nome": "Bolzano",
+    "descrizione": "Natura e cultura mitteleuropea tra le Dolomiti.",
+    "stagioni": ["inverno", "estate"],
+    "esperienze": ["montagna", "natura", "cultura"],
+    "budget": "alto"
+  },
+  {
+    "nome": "Ischia",
+    "descrizione": "Terme, mare e natura in una perla del Golfo di Napoli.",
+    "stagioni": ["primavera", "estate"],
+    "esperienze": ["relax", "mare", "benessere"],
+    "budget": "medio"
+  },
+  {
+    "nome": "Siena",
+    "descrizione": "Il fascino medievale del Palio e delle contrade.",
+    "stagioni": ["primavera", "autunno"],
+    "esperienze": ["cultura", "storia", "esperienziale"],
+    "budget": "medio"
+  },
+  {
+    "nome": "Trieste",
+    "descrizione": "Città di confine, tra mare e caffè letterari.",
+    "stagioni": ["primavera", "autunno"],
+    "esperienze": ["cultura", "mare", "storia"],
+    "budget": "medio"
   }
 ]
