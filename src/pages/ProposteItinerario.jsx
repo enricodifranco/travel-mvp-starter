@@ -31,3 +31,5 @@ const ProposteItinerario = () => {
     </div>
   );
 };
+
+export default ProposteItinerario;
