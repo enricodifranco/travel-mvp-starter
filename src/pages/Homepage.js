@@ -10,11 +10,6 @@ const Homepage = () => {
 
   return (
     <div className="min-h-screen">
-      <nav className="flex justify-center gap-10 p-4 bg-white shadow">
-        <a href="#come-funziona" className="text-blue-600 font-semibold">Come funziona</a>
-        <a href="/contatti" className="text-blue-600 font-semibold">Contatti</a>
-        <a href="/recensioni" className="text-blue-600 font-semibold">Recensioni</a>
-      </nav>
       <header className="flex flex-col items-center justify-center text-center h-[60vh] bg-blue-50">
         <h1 className="text-4xl font-bold">Scopri il tuo prossimo viaggio</h1>
         <p className="text-lg text-gray-600 mt-2">Scrivi cosa vuoi fare, ti proponiamo noi dove andare</p>
