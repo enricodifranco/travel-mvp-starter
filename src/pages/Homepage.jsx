@@ -15,7 +15,7 @@ const Homepage = () => {
         <h1>Scopri il viaggio perfetto per te</h1>
         <p>Descrivici cosa cerchi e ti proponiamo 3 itinerari su misura.</p>
         <textarea placeholder="Es. viaggio romantico a settembre in Italia" />
-        <br>
+        <br />
         <button onClick={handleSearch}>Inizia la ricerca</button>
       </section>
       <section className="how-it-works" id="how-it-works">
@@ -26,7 +26,7 @@ const Homepage = () => {
           <div className="step">3. Personalizzalo</div>
           <div className="step">4. Parti e goditi il viaggio</div>
         </div>
-        <br>
+        <br />
         <a href="#search-section">
           <button>Portami al mio viaggio</button>
         </a>
