@@ -1,10 +1,10 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Homepage from './pages/Homepage';
-import ProposteItinerario from './pages/Proposte';
-import ItinerarioScelto from './pages/Itinerario';
+import Proposte from './pages/Proposte';
+import Itinerario from './pages/Itinerario';
 import Contatti from './pages/Contatti';
-import RecensioniPreferiti from './pages/Recensioni';
+import Recensioni from './pages/Recensioni';
 import Navbar from './components/Navbar';
 import './App.css';
 
