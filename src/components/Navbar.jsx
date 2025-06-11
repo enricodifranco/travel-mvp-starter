@@ -1,15 +1,44 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import './Navbar.css'; // (opzionale, se vuoi aggiungere stile CSS separato)
+import { useNavigate, useLocation } from 'react-router-dom';
 
 const Navbar = () => {
+  const navigate = useNavigate();
+  const location = useLocation();
+
+  const goToHome = () => {
+    navigate('/');
+  };
+
+  const goToComeFunziona = () => {
+    if (location.pathname === '/') {
+      // Se siamo già in homepage, scrolla
+      const section = document.getElementById('come-funziona');
+      section?.scrollIntoView({ behavior: 'smooth' });
+    } else {
+      // Se siamo su un'altra pagina, prima vai alla home e poi scrolla
+      navigate('/');
+      setTimeout(() => {
+        const section = document.getElementById('come-funziona');
+        section?.scrollIntoView({ behavior: 'smooth' });
+      }, 300); // Tempo per far caricare la home
+    }
+  };
+
   return (
-    <nav className="navbar">
-      <li><Link to="#"><div className="logo">TravelMate</div></Link></li>
-      <ul className="nav-links">
-        <li><a href="#come-funziona">Come funziona</a></li>
-        <li><Link to="/contatti">Contatti</Link></li>
-        <li><Link to="/recensioni">Recensioni & Preferiti</Link></li>
+    <nav className="bg-white shadow-md py-4 px-8 flex justify-between items-center sticky top-0 z-50">
+      <div onClick={goToHome} className="text-2xl font-bold text-blue-600 cursor-pointer">
+        TravelMVP
+      </div>
+      <ul className="flex space-x-6 text-gray-800 font-medium">
+        <li className="cursor-pointer hover:text-blue-500" onClick={goToComeFunziona}>
+          Come funziona
+        </li>
+        <li className="cursor-pointer hover:text-blue-500" onClick={() => navigate('/contatti')}>
+          Contatti
+        </li>
+        <li className="cursor-pointer hover:text-blue-500" onClick={() => navigate('/recensioni')}>
+          Recensioni & Preferiti
+        </li>
       </ul>
     </nav>
   );
