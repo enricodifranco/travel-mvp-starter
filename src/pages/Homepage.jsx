@@ -10,7 +10,7 @@ const Homepage = () => {
   };
 
   return (
-    <div className="homepage">
+    <div className="homepage" id="search-section">
       <section className="hero">
         <h1>Scopri il viaggio perfetto per te</h1>
         <p>Descrivici cosa cerchi e ti proponiamo 3 itinerari su misura.</p>
@@ -25,7 +25,9 @@ const Homepage = () => {
           <div className="step">3. Personalizzalo</div>
           <div className="step">4. Parti e goditi il viaggio</div>
         </div>
-        <button onClick={handleSearch}>Portami al mio viaggio</button>
+        <a href="#search-section">
+          <button>Portami al mio viaggio</button>
+        </a>
       </section>
     </div>
   );
