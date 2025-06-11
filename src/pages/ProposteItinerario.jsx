@@ -26,6 +26,7 @@ const ProposteItinerario = () => {
       </div>
       <div className="personalizza">
         <textarea placeholder="Scrivi nuove preferenze" />
+        <br />
         <button>Ricalcola</button>
       </div>
     </div>
