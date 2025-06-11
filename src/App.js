@@ -1,14 +1,20 @@
-import React from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Home from "./Home";
-import Risultati from "./Risultati";
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Homepage from './pages/Homepage';
+import Proposte from './pages/Proposte';
+import Itinerario from './pages/Itinerario';
+import Contatti from './pages/Contatti';
+import Recensioni from './pages/Recensioni';
 
 function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/risultati" element={<Risultati />} />
+        <Route path="/" element={<Homepage />} />
+        <Route path="/proposte" element={<Proposte />} />
+        <Route path="/itinerario" element={<Itinerario />} />
+        <Route path="/contatti" element={<Contatti />} />
+        <Route path="/recensioni" element={<Recensioni />} />
       </Routes>
     </Router>
   );
