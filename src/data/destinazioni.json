@@ -54,8 +54,5 @@
     "stagioni": ["primavera", "autunno"],
     "esperienze": ["città d'arte", "natura"],
     "budget": "basso"
-  },
-  {
-    "nome": "Lago di Como",
-    "descrizione": "Eleganza e natura si incontrano in uno dei laghi più famosi d’Italia.",
-    "stagioni": ["primavera", "estate",
+  }
+]
