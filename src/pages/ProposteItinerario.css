@@ -1,0 +1,30 @@
+.proposte {
+  text-align: center;
+  padding: 2rem;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.card {
+  background-color: #f8f9fa;
+  padding: 1rem;
+  border-radius: 10px;
+  width: 250px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.personalizza textarea {
+  width: 50%;
+  height: 80px;
+  margin-bottom: 1rem;
+  padding: 1rem;
+}
+
+.personalizza button {
+  padding: 0.5rem 1.5rem;
+}
