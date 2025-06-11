@@ -13,16 +13,19 @@ const Contatti = () => {
           placeholder="Nome"
           className="w-full p-3 border border-gray-300 rounded-lg"
         />
+        <br />
         <input
           type="email"
           placeholder="Email"
           className="w-full p-3 border border-gray-300 rounded-lg"
         />
+        <br />
         <textarea
           placeholder="Messaggio"
           rows="4"
           className="w-full p-3 border border-gray-300 rounded-lg"
         ></textarea>
+        <br />
         <button
           type="submit"
           className="w-full bg-blue-600 text-white py-3 rounded-lg hover:bg-blue-700 transition duration-300"
