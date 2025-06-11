@@ -1,12 +1,11 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Homepage from './pages/Homepage';
-import Proposte from './pages/Proposte';
-import Itinerario from './pages/Itinerario';
-import Contatti from './pages/Contatti';
-import Recensioni from './pages/Recensioni';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
-import './App.css';
+import Homepage from './pages/Homepage';
+import ProposteItinerario from './pages/ProposteItinerario';
+import ItinerarioScelto from './pages/ItinerarioScelto';
+import Contatti from './pages/Contatti';
+import RecensioniPreferiti from './pages/RecensioniPreferiti';
 
 function App() {
   return (
@@ -14,10 +13,10 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={<Homepage />} />
-        <Route path="/proposte" element={<Proposte />} />
-        <Route path="/itinerario" element={<Itinerario />} />
+        <Route path="/proposte" element={<ProposteItinerario />} />
+        <Route path="/itinerario" element={<ItinerarioScelto />} />
         <Route path="/contatti" element={<Contatti />} />
-        <Route path="/recensioni" element={<Recensioni />} />
+        <Route path="/recensioni" element={<RecensioniPreferiti />} />
       </Routes>
     </Router>
   );
