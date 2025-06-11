@@ -1,220 +1,61 @@
 [
   {
     "nome": "Roma",
-    "regione": "Lazio",
-    "stagioneIdeale": "Primavera",
-    "budget": "Medio",
-    "esperienza": ["Cultura", "Città d'arte"]
-  },
-  {
-    "nome": "Venezia",
-    "regione": "Veneto",
-    "stagioneIdeale": "Inverno",
-    "budget": "Alto",
-    "esperienza": ["Romantico", "Cultura"]
-  },
-  {
-    "nome": "Lecce",
-    "regione": "Puglia",
-    "stagioneIdeale": "Estate",
-    "budget": "Basso",
-    "esperienza": ["Mare", "Cultura"]
-  },
-  {
-    "nome": "Cortina d'Ampezzo",
-    "regione": "Veneto",
-    "stagioneIdeale": "Inverno",
-    "budget": "Alto",
-    "esperienza": ["Montagna", "Avventura"]
-  },
-  {
-    "nome": "Palermo",
-    "regione": "Sicilia",
-    "stagioneIdeale": "Autunno",
-    "budget": "Medio",
-    "esperienza": ["Mare", "Cultura", "Street food"]
+    "descrizione": "La Città Eterna con monumenti storici, musei e cucina tradizionale.",
+    "stagioni": ["primavera", "autunno"],
+    "esperienze": ["città d'arte", "enogastronomia"],
+    "budget": "medio"
   },
   {
     "nome": "Firenze",
-    "regione": "Toscana",
-    "stagioneIdeale": "Primavera",
-    "budget": "Medio",
-    "esperienza": ["Cultura", "Città d'arte"]
+    "descrizione": "Culla del Rinascimento, perfetta per gli amanti dell’arte e della storia.",
+    "stagioni": ["primavera", "estate", "autunno"],
+    "esperienze": ["città d'arte", "enogastronomia"],
+    "budget": "medio"
   },
   {
-    "nome": "Alberobello",
-    "regione": "Puglia",
-    "stagioneIdeale": "Estate",
-    "budget": "Basso",
-    "esperienza": ["Borghi", "Tradizione"]
-  },
-  {
-    "nome": "Bormio",
-    "regione": "Lombardia",
-    "stagioneIdeale": "Inverno",
-    "budget": "Medio",
-    "esperienza": ["Relax", "Montagna", "Terme"]
+    "nome": "Venezia",
+    "descrizione": "Una città unica costruita sull'acqua, ideale per romantici e fotografi.",
+    "stagioni": ["primavera", "autunno"],
+    "esperienze": ["città d'arte", "relax"],
+    "budget": "alto"
   },
   {
     "nome": "Napoli",
-    "regione": "Campania",
-    "stagioneIdeale": "Primavera",
-    "budget": "Basso",
-    "esperienza": ["Cultura", "Cibo", "Vulcano"]
-  },
-  {
-    "nome": "Matera",
-    "regione": "Basilicata",
-    "stagioneIdeale": "Autunno",
-    "budget": "Medio",
-    "esperienza": ["Cultura", "Borghi", "Unesco"]
+    "descrizione": "Vibrante e autentica, con vista sul Vesuvio e la migliore pizza del mondo.",
+    "stagioni": ["primavera", "autunno"],
+    "esperienze": ["città d'arte", "enogastronomia"],
+    "budget": "basso"
   },
   {
     "nome": "Cinque Terre",
-    "regione": "Liguria",
-    "stagioneIdeale": "Estate",
-    "budget": "Alto",
-    "esperienza": ["Mare", "Trekking", "Panorami"]
+    "descrizione": "Colorati borghi a picco sul mare ideali per trekking e relax.",
+    "stagioni": ["primavera", "estate"],
+    "esperienze": ["mare", "natura"],
+    "budget": "medio"
   },
   {
-    "nome": "Verona",
-    "regione": "Veneto",
-    "stagioneIdeale": "Primavera",
-    "budget": "Medio",
-    "esperienza": ["Romantico", "Città d'arte"]
+    "nome": "Dolomiti",
+    "descrizione": "Le montagne più spettacolari d’Italia, perfette per escursioni e sport invernali.",
+    "stagioni": ["estate", "inverno"],
+    "esperienze": ["montagna", "avventura", "natura"],
+    "budget": "medio"
   },
   {
-    "nome": "Taormina",
-    "regione": "Sicilia",
-    "stagioneIdeale": "Estate",
-    "budget": "Alto",
-    "esperienza": ["Mare", "Relax", "Cultura"]
+    "nome": "Amalfi",
+    "descrizione": "Una delle perle della Costiera Amalfitana, ideale per vacanze romantiche.",
+    "stagioni": ["primavera", "estate"],
+    "esperienze": ["mare", "relax"],
+    "budget": "alto"
   },
   {
-    "nome": "Aosta",
-    "regione": "Valle d'Aosta",
-    "stagioneIdeale": "Inverno",
-    "budget": "Medio",
-    "esperienza": ["Montagna", "Sport", "Storia"]
+    "nome": "Matera",
+    "descrizione": "Famosa per i Sassi, offre un’esperienza autentica e fuori dal tempo.",
+    "stagioni": ["primavera", "autunno"],
+    "esperienze": ["città d'arte", "natura"],
+    "budget": "basso"
   },
   {
-    "nome": "Rimini",
-    "regione": "Emilia-Romagna",
-    "stagioneIdeale": "Estate",
-    "budget": "Basso",
-    "esperienza": ["Mare", "Divertimento"]
-  },
-  {
-    "nome": "Siena",
-    "regione": "Toscana",
-    "stagioneIdeale": "Autunno",
-    "budget": "Medio",
-    "esperienza": ["Cultura", "Tradizione", "Palio"]
-  },
-  {
-    "nome": "Tropea",
-    "regione": "Calabria",
-    "stagioneIdeale": "Estate",
-    "budget": "Basso",
-    "esperienza": ["Mare", "Relax", "Borghi"]
-  },
-  {
-    "nome": "Bolzano",
-    "regione": "Trentino-Alto Adige",
-    "stagioneIdeale": "Inverno",
-    "budget": "Alto",
-    "esperienza": ["Montagna", "Mercatini", "Cultura"]
-  },
-  {
-    "nome": "San Gimignano",
-    "regione": "Toscana",
-    "stagioneIdeale": "Primavera",
-    "budget": "Medio",
-    "esperienza": ["Borghi", "Enogastronomia"]
-  },
-  {
-    "nome": "Parma",
-    "regione": "Emilia-Romagna",
-    "stagioneIdeale": "Autunno",
-    "budget": "Medio",
-    "esperienza": ["Cibo", "Cultura"]
-  },
-  {
-    "nome": "Ischia",
-    "regione": "Campania",
-    "stagioneIdeale": "Estate",
-    "budget": "Medio",
-    "esperienza": ["Relax", "Terme", "Mare"]
-  },
-  {
-    "nome": "Perugia",
-    "regione": "Umbria",
-    "stagioneIdeale": "Autunno",
-    "budget": "Medio",
-    "esperienza": ["Cultura", "Eventi", "Cioccolato"]
-  },
-  {
-    "nome": "Portofino",
-    "regione": "Liguria",
-    "stagioneIdeale": "Primavera",
-    "budget": "Alto",
-    "esperienza": ["Mare", "Lusso", "Natura"]
-  },
-  {
-    "nome": "Trapani",
-    "regione": "Sicilia",
-    "stagioneIdeale": "Estate",
-    "budget": "Basso",
-    "esperienza": ["Mare", "Storia", "Cibo"]
-  },
-  {
-    "nome": "Bologna",
-    "regione": "Emilia-Romagna",
-    "stagioneIdeale": "Primavera",
-    "budget": "Medio",
-    "esperienza": ["Cultura", "Cibo", "Università"]
-  },
-  {
-    "nome": "Orvieto",
-    "regione": "Umbria",
-    "stagioneIdeale": "Autunno",
-    "budget": "Basso",
-    "esperienza": ["Borghi", "Cultura", "Panorami"]
-  },
-  {
-    "nome": "Agrigento",
-    "regione": "Sicilia",
-    "stagioneIdeale": "Primavera",
-    "budget": "Medio",
-    "esperienza": ["Archeologia", "Cultura"]
-  },
-  {
-    "nome": "Gubbio",
-    "regione": "Umbria",
-    "stagioneIdeale": "Inverno",
-    "budget": "Basso",
-    "esperienza": ["Borghi", "Tradizione", "Feste"]
-  },
-  {
-    "nome": "Bari",
-    "regione": "Puglia",
-    "stagioneIdeale": "Estate",
-    "budget": "Basso",
-    "esperienza": ["Mare", "Cibo", "Cultura"]
-  },
-  {
-    "nome": "Lucca",
-    "regione": "Toscana",
-    "stagioneIdeale": "Primavera",
-    "budget": "Medio",
-    "esperienza": ["Cultura", "Eventi", "Relax"]
-  },
-  {
-    "nome": "Ragusa Ibla",
-    "regione": "Sicilia",
-    "stagioneIdeale": "Autunno",
-    "budget": "Basso",
-    "esperienza": ["Borghi", "Barocco", "Cibo"]
-  }
-  // Aggiungerò altre 20 destinazioni nel prossimo messaggio per motivi di spazio
-]
+    "nome": "Lago di Como",
+    "descrizione": "Eleganza e natura si incontrano in uno dei laghi più famosi d’Italia.",
+    "stagioni": ["primavera", "estate",
